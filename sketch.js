@@ -27,7 +27,7 @@ var speed = 1;
 function setup() {
   // debugger;
   tris = [];
-  createCanvas(960, 540);
+  createCanvas(windowWidth, windowHeight);
   for(let i=0; i<n; i++){
     for(let j=0; (tris.length>0) ? tris.last().h()*j<height : true; j++){
       tris.push(new tri(width/n));
